@@ -61,6 +61,7 @@ describe("getTotalCost()", () => {
 
   // NOTE: These tests will fail - why?
   // I stated my reasons as comments, see below
+  // I removed '.skip' in order to run this block of code and test it
   describe("handles unexpected input", () => {
     it("returns 0 if either argument is not a number", () => {
       expect(getTotalCost("25", 3)).toBe(75);  /* should return 75, not 0 */
